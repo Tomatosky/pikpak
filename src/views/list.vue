@@ -775,7 +775,7 @@ import axios from 'axios';
           if(downFileList.value.length) {
             setTimeout(() => {
               postOne()
-            }, 1000)
+            }, 500)
           } else {
             setTimeout(() => {
               nRef.value?.destroy()
