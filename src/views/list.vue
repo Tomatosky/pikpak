@@ -771,6 +771,7 @@ import axios from 'axios';
           await aria2Post(res, data.parent)
           if(nRef.value?.content) {
             nRef.value.content = nRef.value?.content + '\r\n' + '推送' + data.parent + '/' + data.name + '成功'
+            console.log(downFileList.value.length);
           }
           if(downFileList.value.length) {
             setTimeout(() => {
