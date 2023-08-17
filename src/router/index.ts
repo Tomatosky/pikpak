@@ -1,6 +1,6 @@
 import { createRouter, createWebHashHistory, RouteRecordRaw } from 'vue-router'
 import Layout from '../views/layout/index.vue'
-const routes: Array<RouteRecordRaw> = [
+const routes: RouteRecordRaw[] = [
   {
     path: '/',
     name: 'home',
@@ -39,6 +39,11 @@ const routes: Array<RouteRecordRaw> = [
         path: 'setting',
         name: 'setting',
         component: () => import('../views/setting.vue')
+      },
+      {
+        path: 'invited',
+        name: 'invited',
+        component: () => import('../views/invited.vue')
       },
       {
         path: 'share',
